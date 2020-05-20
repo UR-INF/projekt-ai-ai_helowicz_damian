@@ -1,0 +1,44 @@
+#carouselExampleControls {
+    margin: 0px;
+}
+
+#footer {
+    border: solid;
+}
+
+body {
+    font-family: 'Staatliches', cursive;
+}
+p{
+    margin-bottom: 0;
+}
+
+.navbar {
+    font-size: 1.5rem;
+}
+
+.btn-lg {
+    font-size: 1.5rem;
+}
+
+footer {
+    text-align: center;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+.onasico {
+    font-size: 20px;
+}
+footer{
+    text-align: center;
+}
+a{
+    color: inherit;
+}
+label{
+    margin-bottom: 0;
+}
+

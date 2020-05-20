@@ -1,58 +1,58 @@
 CREATE TABLE `Klient` (
-  `id_klient` int PRIMARY KEY,
-  `imie` varchar(255),
-  `nazwisko` varchar(255),
-  `email` varchar(255),
-  `haslo` varchar(255),
-  `nr_telefonu` int,
-  `nr_karty` int,
-  `data_waz` varchar(255),
-  `cvv` int
+  `id_klient` int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `imie` varchar(255) NOT NULL,
+  `nazwisko` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `haslo` varchar(255) NOT NULL,
+  `nr_telefonu` int NOT NULL,
+  `nr_karty` int NOT NULL,
+  `data_waz` varchar(255) NOT NULL,
+  `cvv` int NOT NULL
 );
 
 CREATE TABLE `Samochod` (
-  `id_samochod` int PRIMARY KEY,
-  `marka` varchar(255),
-  `model` varchar(255),
-  `rok_prod` date,
-  `silnik` varchar(255),
-  `miejsca` int,
-  `drzwi` int,
-  `bagaznik` varchar(255),
-  `klimatyzacja` varchar(255),
-  `kolor` varchar(255),
-  `rodz_paliwa` varchar(255),
-  `cena` int,
-  `zdjecie` varchar(255)
+  `id_samochod` int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `marka` varchar(255) NOT NULL,
+  `model` varchar(255) NOT NULL,
+  `rok_prod` date NOT NULL,
+  `silnik` varchar(255) NOT NULL,
+  `miejsca` int NOT NULL,
+  `drzwi` int NOT NULL,
+  `bagaznik` varchar(255) NOT NULL,
+  `klimatyzacja` varchar(255) NOT NULL,
+  `kolor` varchar(255) NOT NULL,
+  `rodz_paliwa` varchar(255) NOT NULL,
+  `cena` int NOT NULL,
+  `zdjecie` varchar(255) NOT NULL
 );
 
 CREATE TABLE `Pracownik` (
-  `id_pracownik` int PRIMARY KEY,
-  `id_miejsce` int,
-  `imie` varchar(255),
-  `nazwisko` varchar(255),
-  `email` varchar(255),
-  `haslo` varchar(255),
-  `nr_telefonu` int
+  `id_pracownik` int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `id_miejsce` int NOT NULL,
+  `imie` varchar(255) NOT NULL,
+  `nazwisko` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `haslo` varchar(255) NOT NULL,
+  `nr_telefonu` int NOT NULL
 );
 
 CREATE TABLE `Miejsce` (
-  `id_miejsce` int PRIMARY KEY,
-  `ulica` varchar(255),
-  `numer` varchar(255),
-  `miasto` varchar(255),
-  `kod` varchar(255),
-  `numer_tel` int
+  `id_miejsce` int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `ulica` varchar(255) NOT NULL,
+  `numer` varchar(255) NOT NULL,
+  `miasto` varchar(255) NOT NULL,
+  `kod` varchar(255) NOT NULL,
+  `numer_tel` int NOT NULL
 );
 
 CREATE TABLE `Wypozyczenie` (
-  `id_wypozyczenia` int PRIMARY KEY,
-  `id_samochod` int,
-  `id_klient` int,
-  `id_miejsce` int,
-  `data_odb` date,
-  `data_zwr` date,
-  `status` varchar(255)
+  `id_wypozyczenia` int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `id_samochod` int NOT NULL,
+  `id_klient` int NOT NULL,
+  `id_miejsce` int NOT NULL,
+  `data_odb` date NOT NULL,
+  `data_zwr` date NOT NULL,
+  `status` varchar(255) NOT NULL
 );
 
 ALTER TABLE `Pracownik` ADD FOREIGN KEY (`id_miejsce`) REFERENCES `Miejsce` (`id_miejsce`);
