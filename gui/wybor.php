@@ -90,8 +90,8 @@ $result = $conn->query($sql);
         <section>
             <div class="container">
                 <?php
-                
-                while($row = $result->fetch_assoc()) {
+
+                while ($row = $result->fetch_assoc()) {
                 ?>
                     <div class="row wyniki_sam">
                         <div class="col-sm-12 col-md-6 col-lg-5">
@@ -100,17 +100,11 @@ $result = $conn->query($sql);
                         </div>
 
                         <div class="col-sm-6 col-md-4 wyniki_sam_list">
-                            <img class="float-left" src="img/min/1.png" alt="">
                             <p>Liczba miejsc: <?php echo $row['miejsca'] ?></p>
-                            <img class="float-left" src="img/min/2.png" alt="">
                             <p>Bagażnik: <?php echo $row['bagaznik'] ?></p>
-                            <img class="float-left" src="img/min/3.png" alt="">
                             <p>Liczba drzwi: <?php echo $row['drzwi'] ?></p>
-                            <img class="float-left" src="img/min/4.png" alt="">
                             <p>Kolor: <?php echo $row['kolor'] ?></p>
-                            <img class="float-left" src="img/min/5.png" alt="">
                             <p>Rodzaj klimatyzacji: <?php echo $row['klimatyzacja'] ?></p>
-                            <img class="float-left" src="img/min/6.png" alt="">
                             <p>Rodzaj paliwa:<?php echo $row['rodz_paliwa'] ?></p>
                         </div>
 
