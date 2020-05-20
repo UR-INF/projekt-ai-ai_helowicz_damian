@@ -100,12 +100,12 @@ $result = $conn->query($sql);
                         </div>
 
                         <div class="col-sm-6 col-md-4 wyniki_sam_list">
-                            <p>Liczba miejsc: <?php echo $row['miejsca'] ?></p>
-                            <p>Bagażnik: <?php echo $row['bagaznik'] ?></p>
-                            <p>Liczba drzwi: <?php echo $row['drzwi'] ?></p>
-                            <p>Kolor: <?php echo $row['kolor'] ?></p>
-                            <p>Rodzaj klimatyzacji: <?php echo $row['klimatyzacja'] ?></p>
-                            <p>Rodzaj paliwa:<?php echo $row['rodz_paliwa'] ?></p>
+                            <h5>Liczba miejsc: <?php echo $row['miejsca'] ?></h5>
+                            <h5>Bagażnik: <?php echo $row['bagaznik'] ?></h5>
+                            <h5>Liczba drzwi: <?php echo $row['drzwi'] ?></h5>
+                            <h5>Kolor: <?php echo $row['kolor'] ?></h5>
+                            <h5>Rodzaj klimatyzacji: <?php echo $row['klimatyzacja'] ?></h5>
+                            <h5>Rodzaj paliwa:<?php echo $row['rodz_paliwa'] ?></h5>
                         </div>
 
                         <div class="col-sm-6 col-md-2 col-lg-3">
